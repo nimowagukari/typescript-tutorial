@@ -1,6 +1,6 @@
 "use strict";
 
-import { Resolver } from 'node:dns/promises'
+import { Resolver } from "node:dns/promises";
 
 function upper(arg: string): string {
   return arg.toUpperCase();

@@ -8,7 +8,10 @@ const filePath = "./src/inputs/text02.txt";
 const contents = fs.readFile(filePath, { encoding: "utf-8" });
 contents
   .then((v) => console.log(v))
-  .catch((err) => console.log(err))
-  .finally(() => {
-    process.exit();
+  .catch((err) => {
+    console.log({ mesage: err.message });
+    for (const e in err) {
+      console.log({ [e]: err[e] });
+    }
+    process.exit(0);
   });
