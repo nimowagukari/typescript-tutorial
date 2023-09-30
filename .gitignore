@@ -239,7 +239,8 @@ $RECYCLE.BIN/
 /.devcontainer
 /.vscode
 /dist
-/src/
+/src/*
 !/src/.gitignore
 /tsconfig.json
-/types
+/types/*
+!/types/.gitignore
