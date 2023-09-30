@@ -1,4 +1,1 @@
-/.devcontainer
-/.vscode
-/dist
-/tsconfig.json
+.gitignore
