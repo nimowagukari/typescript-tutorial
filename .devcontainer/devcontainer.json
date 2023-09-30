@@ -16,7 +16,8 @@
 			"extensions": [
 				"esbenp.prettier-vscode",
 				"dbaeumer.vscode-eslint",
-				"shd101wyy.markdown-preview-enhanced"
+				"shd101wyy.markdown-preview-enhanced",
+				"Orta.vscode-jest"
 			]
 		}
 	}
