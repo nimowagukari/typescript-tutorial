@@ -1,0 +1,20 @@
+services:
+  db:
+    image: "mysql:8.2.0"
+    command:
+      - "--general-log"
+      - "--general-log-file=/var/lib/mysql/general.log"
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_PASSWORD:
+      MYSQL_USER:
+      MYSQL_DATABASE:
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin -u ${MYSQL_USER} -p${MYSQL_PASSWORD} ping"]
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/initdb.d/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - mysql_data:/var/lib/docker
+volumes:
+  mysql_data:

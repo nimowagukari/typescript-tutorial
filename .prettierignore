@@ -1,1 +1,7 @@
-.gitignore
+/.devcontainer
+/.vscode
+/dist
+!/src/.gitignore
+/tsconfig.json
+/types/*
+!/types/.gitignore

@@ -17,7 +17,9 @@
 				"esbenp.prettier-vscode",
 				"dbaeumer.vscode-eslint",
 				"shd101wyy.markdown-preview-enhanced",
-				"Orta.vscode-jest"
+				"Orta.vscode-jest",
+				"ms-azuretools.vscode-docker",
+				"adpyke.vscode-sql-formatter"
 			]
 		}
 	}
